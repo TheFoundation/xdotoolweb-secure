@@ -19,7 +19,7 @@ var wsprot="ws://"
 if(window.location.protocol == "https:"|| window.location.protocol == "https" ) { wsprot = "wss://"; }
 var wspath=":8081"
 // your frontend proxy needs to  forward /ws to port  8081 and send the upgrade headers
-if(window.location.protocol == "https:"|| window.location.protocol == "https" ) { wspath = "/ws"; }
+if(window.location.protocol == "https:"|| window.location.protocol == "https" ) { wspath = ":"+location.port+"/ws"; }
 
 var WS	= new WebSocket(wsprot + location.hostname + wspath)
 
