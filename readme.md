@@ -1,8 +1,8 @@
-xdotool Web Based Interface
-===========================
+xdotool Web Based Interface - Secure Version
+============================================
 
 > Web Based Keyboard and Mouse Remote Controller
-
+> works behind reverse proxies when /ws is tunneled to tcp:8081
 ![Screenshot](web/preview.png?raw=true "Title")
 
 How it Works
