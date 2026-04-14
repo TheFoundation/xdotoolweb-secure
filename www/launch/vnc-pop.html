@@ -1,0 +1,46 @@
+<html>
+	<head>
+		    <base target="_blank">
+		  <link id="landing-css" href="/launch/css/style.bundle.css" rel="stylesheet" media="screen">
+		<script language="javascript" type="text/javascript">
+
+function popitup(url) {
+//newwindow=window.open(url, '_blank', 'location=no,height=200,width=150');
+newwindow=window.open(url, "_blank", "width=700,height=500,scrollbars=no,toolbar=no,menubar=no");void(0);
+if(newwindow) {
+  if (window.focus) {newwindow.focus()}
+}
+return false;
+}
+function showkeys() { 
+	url=new URL(window.location)
+	popitup(url.protocol+"//"+url.host+"/keys")
+	return false
+}
+</script>
+	</head>
+<body>
+	     <nav><div><center>	        <a href="/launch/keys.html"  target="_blank"  class="btn btn-primary px-2 ">Open Keys<br></a>	</center>     </div></nav>
+	<!-- <nav><div><center>	        <a href="#" onclick="return showkeys()"    class="btn btn-primary px-2 ">Open Keys<br></a>	</center>     </div></nav> -->
+  <iframe src="/vnc.html" style="height:100%;width:100%;" title="NoVNC Iframe"></iframe>
+
+<script>
+	//url=new URL(window.location)
+	//popitup("/keys")
+	////console.log(url.protocol+"//"+url.host+"/vnc.html")
+	//setTimeout (
+    //  function () {
+	//	  var url=new URL(window.location);
+	//     // similar behavior as an HTTP redirect
+    //     //window.location.replace(url.protocol+"//"+url.host+"/vnc.html");
+    //     
+    //     // similar behavior as clicking on a link
+    //     window.location.href = url.protocol+"//"+url.host+"/vnc.html";
+    //  }, 
+    //  1234
+    //) ;
+
+
+</script>
+</body>
+</html>
